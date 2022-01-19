@@ -13,6 +13,7 @@ eureka:
 spring:
   cloud:
     gateway:
-      dicovery.locator:
-        enabled: true
-        lowerCaseServiceId: true
+      dicovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
