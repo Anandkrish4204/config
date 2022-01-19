@@ -9,14 +9,3 @@ eureka:
     fetchRegistry : true
     serviceUrl:
       defaultZone: http://eurekaserver:8070/eureka/
-
-spring:
-  cloud:
-    gateway:
-      dicovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
-      routes:
-        - id: licensing-service
-          uri: lb://licensing-service
